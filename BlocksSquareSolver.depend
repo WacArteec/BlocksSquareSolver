@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1724509569 source:d:\codeblocks\blockssquaresolver\main.cpp
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<assert.h>
+	"GetCharReset.h"
+	"MathForSolve.h"
+	"MathForSolve.h"
+
+1724495481 d:\codeblocks\blockssquaresolver\include\comparefloats.h
+
+1724495481 source:d:\codeblocks\blockssquaresolver\src\comparefloats.cpp
+	"CompareFloats.h"
+	<math.h>
+
+1724510859 d:\codeblocks\blockssquaresolver\include\getcharreset.h
+
+1724512721 source:d:\codeblocks\blockssquaresolver\src\getcharreset.cpp
+	<stdio.h>
+	"GetCharReset.h"
+
+1724496312 d:\codeblocks\blockssquaresolver\include\printsolves.h
+
+1724505032 d:\codeblocks\blockssquaresolver\include\mathforsolve.h
+
+1724504257 source:d:\codeblocks\blockssquaresolver\src\example.cpp
+	"example.h"
+
+1724504257 d:\codeblocks\blockssquaresolver\include\example.h
+
+1724581773 source:d:\codeblocks\blockssquaresolver\src\mathforsolve.cpp
+	"MathForSolve.h"
+	<math.h>
+

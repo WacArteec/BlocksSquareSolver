@@ -1,0 +1,131 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include "{}Get\+Char\+Reset.\+h"{}}\newline
+{\ttfamily \#include "{}Math\+For\+Solve.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_solution}{Solution}}
+\item 
+struct \mbox{\hyperlink{struct_parameters}{Parameters}}
+\item 
+struct \mbox{\hyperlink{struct_check_numbers}{Check\+Numbers}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8cpp_a8d23feea868a983c8c2b661e1e16972f}\label{main_8cpp_a8d23feea868a983c8c2b661e1e16972f} 
+\#define {\bfseries RED}~"{}\textbackslash{}033\mbox{[}31m"{}      /\texorpdfstring{$\ast$}{*} Red \texorpdfstring{$\ast$}{*}/
+\item 
+\Hypertarget{main_8cpp_acfbc006ea433ad708fdee3e82996e721}\label{main_8cpp_acfbc006ea433ad708fdee3e82996e721} 
+\#define {\bfseries GREEN}~"{}\textbackslash{}033\mbox{[}32m"{}      /\texorpdfstring{$\ast$}{*} Green \texorpdfstring{$\ast$}{*}/
+\item 
+\Hypertarget{main_8cpp_a7b3b25cba33b07c303f3060fe41887f6}\label{main_8cpp_a7b3b25cba33b07c303f3060fe41887f6} 
+\#define {\bfseries BLACK}~"{}\textbackslash{}033\mbox{[}30m"{}      /\texorpdfstring{$\ast$}{*} Black \texorpdfstring{$\ast$}{*}/
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8cpp_aa0160942cd491cd177d9d5de133bf5a7}\label{main_8cpp_aa0160942cd491cd177d9d5de133bf5a7} 
+enum {\bfseries constantnumbers} \{ {\bfseries Zero}
+, {\bfseries One}
+, {\bfseries Two}
+, {\bfseries Infinity}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8cpp_a9222de386a8c533159df0eb34b441bef}\label{main_8cpp_a9222de386a8c533159df0eb34b441bef} 
+bool {\bfseries Compare\+Floats} (const float a, const float b)
+\item 
+bool \mbox{\hyperlink{main_8cpp_a3246260e7e295dc7a025c62f15de677e}{Solve\+Manager}} (const \mbox{\hyperlink{struct_parameters}{Parameters}} par, \mbox{\hyperlink{struct_solution}{Solution}} \texorpdfstring{$\ast$}{*}const sol)
+\item 
+void \mbox{\hyperlink{main_8cpp_a42b7eec408b8e629976052132ded4764}{Checker}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_a2971c05eec9f2f8610e1bb840aa7af5d}{Linear\+Equation}} (const float b, const float c, \mbox{\hyperlink{struct_solution}{Solution}} \texorpdfstring{$\ast$}{*}const sol)
+\item 
+void \mbox{\hyperlink{main_8cpp_ab98a04cee50b22d57bedf4f8511d24b5}{Print\+Solves}} (const \mbox{\hyperlink{struct_solution}{Solution}} sol)
+\item 
+void \mbox{\hyperlink{main_8cpp_a30a715e64ef53108c93b215477a881ea}{User\+Input\+And\+Check}} (float coef\mbox{[}3\mbox{]})
+\item 
+void \mbox{\hyperlink{main_8cpp_a46ab580064db5999749000a079574139}{Square\+Equation}} (const float a, const float b, const float c, \mbox{\hyperlink{struct_solution}{Solution}} \texorpdfstring{$\ast$}{*}const sol)
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_a42b7eec408b8e629976052132ded4764}\index{main.cpp@{main.cpp}!Checker@{Checker}}
+\index{Checker@{Checker}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{Checker()}{Checker()}}
+{\footnotesize\ttfamily \label{main_8cpp_a42b7eec408b8e629976052132ded4764} 
+void Checker (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} array of coefficients, right solves and their count for each equation\Hypertarget{main_8cpp_a2971c05eec9f2f8610e1bb840aa7af5d}\index{main.cpp@{main.cpp}!LinearEquation@{LinearEquation}}
+\index{LinearEquation@{LinearEquation}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{LinearEquation()}{LinearEquation()}}
+{\footnotesize\ttfamily \label{main_8cpp_a2971c05eec9f2f8610e1bb840aa7af5d} 
+void Linear\+Equation (\begin{DoxyParamCaption}\item[{const float}]{b}{, }\item[{const float}]{c}{, }\item[{\mbox{\hyperlink{struct_solution}{Solution}} \texorpdfstring{$\ast$}{*}const}]{sol}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sol} & solve linear equation \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} keep coefficients
+
+\texorpdfstring{$<$}{<} keep solutions and count of roots\Hypertarget{main_8cpp_ab98a04cee50b22d57bedf4f8511d24b5}\index{main.cpp@{main.cpp}!PrintSolves@{PrintSolves}}
+\index{PrintSolves@{PrintSolves}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{PrintSolves()}{PrintSolves()}}
+{\footnotesize\ttfamily \label{main_8cpp_ab98a04cee50b22d57bedf4f8511d24b5} 
+void Print\+Solves (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_solution}{Solution}}}]{sol}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sol} & print solves of your equation from less to larger root \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8cpp_a3246260e7e295dc7a025c62f15de677e}\index{main.cpp@{main.cpp}!SolveManager@{SolveManager}}
+\index{SolveManager@{SolveManager}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{SolveManager()}{SolveManager()}}
+{\footnotesize\ttfamily \label{main_8cpp_a3246260e7e295dc7a025c62f15de677e} 
+bool Solve\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_parameters}{Parameters}}}]{par}{, }\item[{\mbox{\hyperlink{struct_solution}{Solution}} \texorpdfstring{$\ast$}{*}const}]{sol}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sol} & decide is your equation linear of square \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8cpp_a46ab580064db5999749000a079574139}\index{main.cpp@{main.cpp}!SquareEquation@{SquareEquation}}
+\index{SquareEquation@{SquareEquation}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{SquareEquation()}{SquareEquation()}}
+{\footnotesize\ttfamily \label{main_8cpp_a46ab580064db5999749000a079574139} 
+void Square\+Equation (\begin{DoxyParamCaption}\item[{const float}]{a}{, }\item[{const float}]{b}{, }\item[{const float}]{c}{, }\item[{\mbox{\hyperlink{struct_solution}{Solution}} \texorpdfstring{$\ast$}{*}const}]{sol}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sol} & solve square equation \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8cpp_a30a715e64ef53108c93b215477a881ea}\index{main.cpp@{main.cpp}!UserInputAndCheck@{UserInputAndCheck}}
+\index{UserInputAndCheck@{UserInputAndCheck}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{UserInputAndCheck()}{UserInputAndCheck()}}
+{\footnotesize\ttfamily \label{main_8cpp_a30a715e64ef53108c93b215477a881ea} 
+void User\+Input\+And\+Check (\begin{DoxyParamCaption}\item[{float}]{coef}{\mbox{[}3\mbox{]}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em coef} & allows to enter your parameters and check is it right, if not, is appear a message about it, and you can repeat entering \\
+\hline
+\end{DoxyParams}
