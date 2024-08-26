@@ -36,10 +36,14 @@
 		</Compiler>
 		<Unit filename="include/GetCharReset.h" />
 		<Unit filename="include/MathForSolve.h" />
+		<Unit filename="include/Structures.h" />
+		<Unit filename="include/Tests.h" />
 		<Unit filename="include/example.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/GetCharReset.cpp" />
 		<Unit filename="src/MathForSolve.cpp" />
+		<Unit filename="src/Structures.cpp" />
+		<Unit filename="src/Tests.cpp" />
 		<Unit filename="src/example.cpp" />
 		<Extensions />
 	</Project>

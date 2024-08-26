@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1724509569 source:d:\codeblocks\blockssquaresolver\main.cpp
+1724671500 source:d:\codeblocks\blockssquaresolver\main.cpp
 	<stdio.h>
 	<math.h>
 	<stdlib.h>
@@ -7,6 +7,8 @@
 	"GetCharReset.h"
 	"MathForSolve.h"
 	"MathForSolve.h"
+	"Tests.h"
+	"Structures.h"
 
 1724495481 d:\codeblocks\blockssquaresolver\include\comparefloats.h
 
@@ -14,22 +16,40 @@
 	"CompareFloats.h"
 	<math.h>
 
-1724510859 d:\codeblocks\blockssquaresolver\include\getcharreset.h
+1724670232 d:\codeblocks\blockssquaresolver\include\getcharreset.h
 
-1724512721 source:d:\codeblocks\blockssquaresolver\src\getcharreset.cpp
+1724668358 source:d:\codeblocks\blockssquaresolver\src\getcharreset.cpp
 	<stdio.h>
 	"GetCharReset.h"
 
 1724496312 d:\codeblocks\blockssquaresolver\include\printsolves.h
 
-1724505032 d:\codeblocks\blockssquaresolver\include\mathforsolve.h
+1724670684 d:\codeblocks\blockssquaresolver\include\mathforsolve.h
 
 1724504257 source:d:\codeblocks\blockssquaresolver\src\example.cpp
 	"example.h"
 
 1724504257 d:\codeblocks\blockssquaresolver\include\example.h
 
-1724581773 source:d:\codeblocks\blockssquaresolver\src\mathforsolve.cpp
+1724670017 source:d:\codeblocks\blockssquaresolver\src\mathforsolve.cpp
 	"MathForSolve.h"
 	<math.h>
+
+1724671078 d:\codeblocks\blockssquaresolver\include\tests.h
+	"Structures.h"
+
+1724671625 d:\codeblocks\blockssquaresolver\include\structures.h
+
+1724671517 source:d:\codeblocks\blockssquaresolver\src\structures.cpp
+	<math.h>
+	<assert.h>
+	"Structures.h"
+	"MathForSolve.h"
+
+1724671632 source:d:\codeblocks\blockssquaresolver\src\tests.cpp
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+	"MathForSolve.h"
+	"Tests.h"
 

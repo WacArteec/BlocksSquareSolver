@@ -2,7 +2,7 @@
 #include "MathForSolve.h"
 #include <math.h>
 
-const float COMPARECONST = 1e-5;
+const float COMPARECONST = 1e-5; /**< for comparing two numbers */
 
 /** \brief compare two float number
  *

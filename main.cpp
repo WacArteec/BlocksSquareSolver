@@ -4,42 +4,17 @@
 #include <math.h>
 #include <stdlib.h>
 #include <assert.h>
-#define RED     "\033[31m"      /* Red */
-#define GREEN   "\033[32m"      /* Green */
-#define BLACK   "\033[30m"      /* Black */
-
-enum constantnumbers {Zero, One, Two, Infinity}; /**< constants of count of roots */
-
-struct Solution /**< keep solves and their count of equation */
-{
-    int countroots;/**< the number of roots in equation */
-    float root1, root2; /**< the roots of equation */
-};
 
 #include "GetCharReset.h"
 #include "MathForSolve.h"
 #include "MathForSolve.h"
-
-
-struct Parameters /**< keep coefficients of equation */
-
-{
-    float a; /**< the senior coefficient of equation (x^2) */
-    float b; /**< the second coefficient of equation (x) */
-    float c; /**< the free term of equation (x^2) */
-};
-
-struct CheckNumbers /**< keep right coefficients and solutions of equation for tests */
-{
-    Parameters par_a; /**< coefficients of equation */
-    Solution sol_a; /**< solutions and their count */
-};
+#include "Tests.h"
+#include "Structures.h"
 
 bool CompareFloats(const float a, const float b);
 bool SolveManager(const Parameters par, Solution *const sol);
 //int EqualSymbol(const char refer);
 //void GetcharReset();
-void Checker();
 void LinearEquation(const float b, const float c, Solution * const sol);
 void PrintSolves(const Solution sol);
 void UserInputAndCheck(float coef[3]);
@@ -122,76 +97,6 @@ void UserInputAndCheck(float coef[3]) /**< */
     }
 }
 
-/** \brief decide is your equation linear or square
- *
- * \param par const Parameters (structure of coefficients)
- * \param sol Solution *const (structure of roots and their count)
- * \return bool
- *
- */
-bool SolveManager(const Parameters par, Solution * const sol)  /**<  */
-{
-    assert(sol);
-    assert(&par);
-    const float a = par.a, b = par.b, c = par.c;
-
-    if(CompareFloats(0, a)) return 1;
-    else    return 0;
-}
-
-/** \brief solve square equation
- *
- * \param a const float
- * \param b const float
- * \param c const float
- * \param sol Solution *const
- * \return void
- *
- */
-void SquareEquation(const float a, const float b, const float c, Solution *const sol)
-{
-    const float d = b*b - 4*a*c;
-
-    if(CompareFloats(0, d))
-    {
-        sol->root1 = FabsZero(-b/(2*a));
-        sol->countroots = One;
-    }
-    else if(d < 0)
-    {
-        sol->countroots = Zero;
-    }
-    else
-    {
-        const float sqrt_d = sqrt (d);
-        sol->root1 = FabsZero(Min((-b - sqrt_d)/(2*a),(-b + sqrt_d)/(2*a)));
-        sol->root2 = FabsZero(Max((-b - sqrt_d)/(2*a),(-b + sqrt_d)/(2*a)));
-        sol->countroots = Two;
-    }
-}
-
-/** \brief solve linear equation
- *
- * \param b const float (middle coefficient)
- * \param c const float (free term)
- * \param sol Solution *const (structure of roots and their count)
- * \return void
- *
- */
-void LinearEquation(const float b, const float c, Solution *const sol)
-{
-    if(CompareFloats(0, b))
-    {
-        if(CompareFloats(0, c)) sol->countroots = Infinity;
-        else sol->countroots = Zero;
-    }
-    else
-    {
-        sol->root1= FabsZero(-c/b);
-        sol->countroots = One;
-    }
-}
-
 /** \brief print solves of equation from less to largest root
  *
  * \param sol const Solution (structure of roots and their count)
@@ -219,55 +124,5 @@ void PrintSolves(const Solution sol)
     }
 }
 
-/** \brief UNIT test for this program
- *
- * \return void
- *
- */
-void Checker() /**<  */
-{
-    const CheckNumbers CheckMassive[] = {  /**< array of coefficients, right solves and their count for each equation */
-    //a, b, c,  num roots, x1, x2
-    {{0, 0, 0}, {Infinity, 0, 0}},
-    {{0, 0, 1}, {Zero, 0, 0}},
-    {{0, 1, 1}, {One, -1, 0}},
-    {{1, 1, 1}, {Zero, 0, 0}},
-    {{1, 2, 1}, {One, -1, 0}},
-    {{2, 4, -6}, {Two, -3, 1}},
-    {{7, 9, -13},{Two, -2.14964, 0.86393}},
-    {{23, 23, -17},{Two, -1.49455, 0.49455}},
-    {{0, 23, 17},{One, -0.73913, 0}},
-    {{0, 1, 0},{One, 0, 0}}
-    };
-    size_t sizeCheck = sizeof(CheckMassive)/sizeof(CheckMassive[0]);
 
-    for(int i = 0; i < sizeCheck; i++)
-    {
-        assert (0 <= i && i < sizeCheck);
 
-        struct Parameters par = {CheckMassive[i].par_a.a, CheckMassive[i].par_a.b, CheckMassive[i].par_a.c};
-        struct Solution sol = {0, 0, 0};
-        if(SolveManager(par, &sol)) LinearEquation(par.b, par.c, &sol);
-        else SquareEquation(par.a, par.b, par.c, &sol);
-
-        if(sol.countroots != CheckMassive[i].sol_a.countroots ||
-           CompareFloats(sol.root1, CheckMassive[i].sol_a.root1) == 0 ||
-           CompareFloats(sol.root2, CheckMassive[i].sol_a.root2) == 0)
-        {
-            printf("First condition: %d\n",  sol.countroots != CheckMassive[i].sol_a.countroots);
-            printf("Second condition: %d\n", CompareFloats(sol.root1, CheckMassive[i].sol_a.root1) == 0);
-            printf("Third condition: %d\n",  CompareFloats(sol.root2, CheckMassive[i].sol_a.root2) == 0);
-
-            printf(RED " Check %d failed a=%g b=%g c=%g x1=%g x2=%g NR=%d" BLACK "\n",
-                   i+1,
-                   CheckMassive[i].par_a.a,
-                   CheckMassive[i].par_a.b,
-                   CheckMassive[i].par_a.c,
-                   sol.root1,
-                   sol.root2,
-                   sol.countroots);
-        }
-        else printf(GREEN "Test %d passed successfully"BLACK"\n", i+1);
-    }
-    printf("Check is done\n");
-}
