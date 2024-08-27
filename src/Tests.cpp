@@ -1,3 +1,5 @@
+/*! \file */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -29,7 +31,7 @@
     {{0, 23, 17},{One, -0.73913, 0}},
     {{0, 1, 0},{One, 0, 0}}
     };
-    size_t sizeCheck = sizeof(CheckMassive)/sizeof(CheckMassive[0]);
+    const size_t sizeCheck = sizeof(CheckMassive)/sizeof(CheckMassive[0]);
 
     for(int i = 0; i < sizeCheck; i++)
     {
@@ -57,7 +59,7 @@
                    sol.root2,
                    sol.countroots);
         }
-        else printf(GREEN "Test %d passed successfully"BLACK"\n", i+1);
+        else printf(GREEN"Test %d passed successfully"BLACK"\n", i+1);
     }
     printf("Check is done\n");
 }

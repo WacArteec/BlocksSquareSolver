@@ -11,11 +11,11 @@
 #include "Tests.h"
 #include "Structures.h"
 
-bool CompareFloats(const float a, const float b);
-bool SolveManager(const Parameters par, Solution *const sol);
+//bool CompareFloats(const float a, const float b);
+//bool SolveManager(const Parameters par, Solution *const sol);
 //int EqualSymbol(const char refer);
 //void GetcharReset();
-void LinearEquation(const float b, const float c, Solution * const sol);
+//void LinearEquation(const float b, const float c, Solution * const sol);
 void PrintSolves(const Solution sol);
 void UserInputAndCheck(float coef[3]);
 void SquareEquation(const float a, const float b, const float c, Solution * const sol);
@@ -34,11 +34,8 @@ int main()
 
     while(1)
     {
-        struct Parameters par; /**< keep coefficients */
-        struct Solution sol; /**< keep solutions and count of roots */
-
-        par = {0, 0, 0};
-        sol = {.countroots = 0, .root1 = 0, .root2 = 0};
+        struct Parameters par = {0, 0, 0}; /**< keep coefficients */
+        struct Solution sol = {.countroots = 0, .root1 = 0, .root2 = 0}; /**< keep solutions and count of roots */
 
         printf("To enter your parameters press e or press another button to check solver\n");
 
@@ -76,7 +73,7 @@ void UserInputAndCheck(float coef[3]) /**< */
 {
     for(int i = 0; i < 3; i++)
     {
-        char a;
+        char a = '\0';
         printf("Enter Parameter %c:\n",'a'+i);
         if(scanf("%g%c", &coef[i], &a) != 2)
         {

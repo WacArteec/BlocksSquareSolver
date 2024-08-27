@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Solver: main.cpp File Reference</title>
+<title>Solver: src/Structures.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,84 +81,101 @@ $(function(){ initResizable(false); });
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
+  <div class="headertitle"><div class="title">Structures.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;math.h&gt;</code><br />
-<code>#include &lt;stdlib.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
-<code>#include &quot;GetCharReset.h&quot;</code><br />
-<code>#include &quot;MathForSolve.h&quot;</code><br />
-<code>#include &quot;Tests.h&quot;</code><br />
 <code>#include &quot;Structures.h&quot;</code><br />
+<code>#include &quot;MathForSolve.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab98a04cee50b22d57bedf4f8511d24b5" id="r_ab98a04cee50b22d57bedf4f8511d24b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab98a04cee50b22d57bedf4f8511d24b5">PrintSolves</a> (const <a class="el" href="struct_solution.html">Solution</a> sol)</td></tr>
-<tr class="memdesc:ab98a04cee50b22d57bedf4f8511d24b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">print solves of equation from less to largest root  <br /></td></tr>
-<tr class="separator:ab98a04cee50b22d57bedf4f8511d24b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30a715e64ef53108c93b215477a881ea" id="r_a30a715e64ef53108c93b215477a881ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30a715e64ef53108c93b215477a881ea">UserInputAndCheck</a> (float coef[3])</td></tr>
-<tr class="memdesc:a30a715e64ef53108c93b215477a881ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">enter your parameters and check is it right, if not, is appear a message about it, and you can repeat entering  <br /></td></tr>
-<tr class="separator:a30a715e64ef53108c93b215477a881ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3246260e7e295dc7a025c62f15de677e" id="r_a3246260e7e295dc7a025c62f15de677e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3246260e7e295dc7a025c62f15de677e">SolveManager</a> (const <a class="el" href="struct_parameters.html">Parameters</a> par, <a class="el" href="struct_solution.html">Solution</a> *const sol)</td></tr>
+<tr class="memdesc:a3246260e7e295dc7a025c62f15de677e"><td class="mdescLeft">&#160;</td><td class="mdescRight">decide is your equation linear or square  <br /></td></tr>
+<tr class="separator:a3246260e7e295dc7a025c62f15de677e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46ab580064db5999749000a079574139" id="r_a46ab580064db5999749000a079574139"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46ab580064db5999749000a079574139">SquareEquation</a> (const float a, const float b, const float c, <a class="el" href="struct_solution.html">Solution</a> *const sol)</td></tr>
 <tr class="memdesc:a46ab580064db5999749000a079574139"><td class="mdescLeft">&#160;</td><td class="mdescRight">solve square equation  <br /></td></tr>
 <tr class="separator:a46ab580064db5999749000a079574139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
-<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">allows to choose to enter your parameters or conduct a check  <br /></td></tr>
-<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2971c05eec9f2f8610e1bb840aa7af5d" id="r_a2971c05eec9f2f8610e1bb840aa7af5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2971c05eec9f2f8610e1bb840aa7af5d">LinearEquation</a> (const float b, const float c, <a class="el" href="struct_solution.html">Solution</a> *const sol)</td></tr>
+<tr class="memdesc:a2971c05eec9f2f8610e1bb840aa7af5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">solve linear equation  <br /></td></tr>
+<tr class="separator:a2971c05eec9f2f8610e1bb840aa7af5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+<a id="a2971c05eec9f2f8610e1bb840aa7af5d" name="a2971c05eec9f2f8610e1bb840aa7af5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2971c05eec9f2f8610e1bb840aa7af5d">&#9670;&#160;</a></span>LinearEquation()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int main </td>
+          <td class="memname">void LinearEquation </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>allows to choose to enter your parameters or conduct a check </p>
-<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
-<p>&lt; keep coefficients</p>
-<p>&lt; keep solutions and count of roots</p>
-
-</div>
-</div>
-<a id="ab98a04cee50b22d57bedf4f8511d24b5" name="ab98a04cee50b22d57bedf4f8511d24b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab98a04cee50b22d57bedf4f8511d24b5">&#9670;&#160;</a></span>PrintSolves()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">void PrintSolves </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_solution.html">Solution</a></td>          <td class="paramname"><span class="paramname"><em>sol</em></span></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_solution.html">Solution</a> *const</td>          <td class="paramname"><span class="paramname"><em>sol</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>print solves of equation from less to largest root </p>
+<p>solve linear equation </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sol</td><td>const <a class="el" href="struct_solution.html">Solution</a> (structure of roots and their count) </td></tr>
+    <tr><td class="paramname">b</td><td>const float (middle coefficient) </td></tr>
+    <tr><td class="paramname">c</td><td>const float (free term) </td></tr>
+    <tr><td class="paramname">sol</td><td><a class="el" href="struct_solution.html">Solution</a> *const (structure of roots and their count) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a3246260e7e295dc7a025c62f15de677e" name="a3246260e7e295dc7a025c62f15de677e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3246260e7e295dc7a025c62f15de677e">&#9670;&#160;</a></span>SolveManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SolveManager </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_parameters.html">Parameters</a></td>          <td class="paramname"><span class="paramname"><em>par</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_solution.html">Solution</a> *const</td>          <td class="paramname"><span class="paramname"><em>sol</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>decide is your equation linear or square </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">par</td><td>const <a class="el" href="struct_parameters.html">Parameters</a> (structure of coefficients) </td></tr>
+    <tr><td class="paramname">sol</td><td><a class="el" href="struct_solution.html">Solution</a> *const (structure of roots and their count) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
 </div>
 </div>
@@ -198,32 +215,6 @@ Functions</h2></td></tr>
     <tr><td class="paramname">b</td><td>const float </td></tr>
     <tr><td class="paramname">c</td><td>const float </td></tr>
     <tr><td class="paramname">sol</td><td><a class="el" href="struct_solution.html">Solution</a> *const </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="a30a715e64ef53108c93b215477a881ea" name="a30a715e64ef53108c93b215477a881ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30a715e64ef53108c93b215477a881ea">&#9670;&#160;</a></span>UserInputAndCheck()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void UserInputAndCheck </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>coef</em></span>[3]</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>enter your parameters and check is it right, if not, is appear a message about it, and you can repeat entering </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">coef[3]</td><td>float (array of coefficients) </td></tr>
   </table>
   </dd>
 </dl>

@@ -40,13 +40,13 @@
 
 1724671625 d:\codeblocks\blockssquaresolver\include\structures.h
 
-1724671517 source:d:\codeblocks\blockssquaresolver\src\structures.cpp
+1724763261 source:d:\codeblocks\blockssquaresolver\src\structures.cpp
 	<math.h>
 	<assert.h>
 	"Structures.h"
 	"MathForSolve.h"
 
-1724671632 source:d:\codeblocks\blockssquaresolver\src\tests.cpp
+1724673325 source:d:\codeblocks\blockssquaresolver\src\tests.cpp
 	<stdio.h>
 	<stdlib.h>
 	<assert.h>

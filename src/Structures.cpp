@@ -1,3 +1,5 @@
+/*! \file */
+
 #include <math.h>
 #include <assert.h>
 
@@ -14,7 +16,6 @@
 bool SolveManager(const Parameters par, Solution * const sol)  /**<  */
 {
     assert(sol);
-    assert(&par);
     const float a = par.a, b = par.b, c = par.c;
 
     if(CompareFloats(0, a)) return 1;
@@ -32,6 +33,8 @@ bool SolveManager(const Parameters par, Solution * const sol)  /**<  */
  */
 void SquareEquation(const float a, const float b, const float c, Solution *const sol)
 {
+    assert(sol);
+
     const float d = b*b - 4*a*c;
 
     if(CompareFloats(0, d))
@@ -62,6 +65,8 @@ void SquareEquation(const float a, const float b, const float c, Solution *const
  */
 void LinearEquation(const float b, const float c, Solution *const sol)
 {
+    assert(sol);
+
     if(CompareFloats(0, b))
     {
         if(CompareFloats(0, c)) sol->countroots = Infinity;

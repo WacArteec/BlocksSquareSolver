@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Solver: include Directory Reference</title>
+<title>Solver: include/Tests.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,22 +88,30 @@ $(function(){ initResizable(false); });
 </div><!-- top -->
 <div id="doc-content">
 <div class="header">
-  <div class="headertitle"><div class="title">include Directory Reference</div></div>
+  <div class="headertitle"><div class="title">Tests.h</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
-Files</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="_get_char_reset_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetCharReset.h</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="_math_for_solve_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>MathForSolve.h</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="_structures_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>Structures.h</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="_tests_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>Tests.h</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-</div><!-- contents -->
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TESTS_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TESTS_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;Structures.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="struct_check_numbers.html">    5</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_check_numbers.html">CheckNumbers</a> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="struct_check_numbers.html#ad21f51894f618eb154664ca0cd5c95fb">    7</a></span>    <a class="code hl_struct" href="struct_parameters.html">Parameters</a> <a class="code hl_variable" href="struct_check_numbers.html#ad21f51894f618eb154664ca0cd5c95fb">par_a</a>; </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="struct_check_numbers.html#a68015840f11f454b6dc913c94d0c2c70">    8</a></span>    <a class="code hl_struct" href="struct_solution.html">Solution</a> <a class="code hl_variable" href="struct_check_numbers.html#a68015840f11f454b6dc913c94d0c2c70">sol_a</a>; </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>};</div>
+</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keywordtype">void</span> Checker();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#endif </span><span class="comment">// TESTS_H</span></div>
+<div class="ttc" id="astruct_check_numbers_html"><div class="ttname"><a href="struct_check_numbers.html">CheckNumbers</a></div><div class="ttdef"><b>Definition</b> Tests.h:6</div></div>
+<div class="ttc" id="astruct_check_numbers_html_a68015840f11f454b6dc913c94d0c2c70"><div class="ttname"><a href="struct_check_numbers.html#a68015840f11f454b6dc913c94d0c2c70">CheckNumbers::sol_a</a></div><div class="ttdeci">Solution sol_a</div><div class="ttdef"><b>Definition</b> Tests.h:8</div></div>
+<div class="ttc" id="astruct_check_numbers_html_ad21f51894f618eb154664ca0cd5c95fb"><div class="ttname"><a href="struct_check_numbers.html#ad21f51894f618eb154664ca0cd5c95fb">CheckNumbers::par_a</a></div><div class="ttdeci">Parameters par_a</div><div class="ttdef"><b>Definition</b> Tests.h:7</div></div>
+<div class="ttc" id="astruct_parameters_html"><div class="ttname"><a href="struct_parameters.html">Parameters</a></div><div class="ttdef"><b>Definition</b> Structures.h:14</div></div>
+<div class="ttc" id="astruct_solution_html"><div class="ttname"><a href="struct_solution.html">Solution</a></div><div class="ttdef"><b>Definition</b> Structures.h:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0

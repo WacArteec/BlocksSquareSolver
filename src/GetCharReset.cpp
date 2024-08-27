@@ -1,4 +1,5 @@
 /*! \file */
+
 #include <stdio.h>
 
 #include "GetCharReset.h"

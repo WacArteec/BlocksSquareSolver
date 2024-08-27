@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Solver: Parameters Struct Reference</title>
+<title>Solver: src/Tests.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,78 +81,65 @@ $(function(){ initResizable(false); });
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="struct_parameters-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Parameters Struct Reference</div></div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">Tests.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_structures_8h_source.html">Structures.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a32c8f559554a84ad203a86d3080b1d58" id="r_a32c8f559554a84ad203a86d3080b1d58"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32c8f559554a84ad203a86d3080b1d58">a</a></td></tr>
-<tr class="separator:a32c8f559554a84ad203a86d3080b1d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59558baa54c65dded137c2ab79e55ffe" id="r_a59558baa54c65dded137c2ab79e55ffe"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59558baa54c65dded137c2ab79e55ffe">b</a></td></tr>
-<tr class="separator:a59558baa54c65dded137c2ab79e55ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67d43460299de121dc5e8f50d36e7f24" id="r_a67d43460299de121dc5e8f50d36e7f24"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67d43460299de121dc5e8f50d36e7f24">c</a></td></tr>
-<tr class="separator:a67d43460299de121dc5e8f50d36e7f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &quot;MathForSolve.h&quot;</code><br />
+<code>#include &quot;Tests.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a8d23feea868a983c8c2b661e1e16972f" id="r_a8d23feea868a983c8c2b661e1e16972f"><td class="memItemLeft" align="right" valign="top"><a id="a8d23feea868a983c8c2b661e1e16972f" name="a8d23feea868a983c8c2b661e1e16972f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RED</b>&#160;&#160;&#160;&quot;\033[31m&quot;      /* Red */</td></tr>
+<tr class="separator:a8d23feea868a983c8c2b661e1e16972f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfbc006ea433ad708fdee3e82996e721" id="r_acfbc006ea433ad708fdee3e82996e721"><td class="memItemLeft" align="right" valign="top"><a id="acfbc006ea433ad708fdee3e82996e721" name="acfbc006ea433ad708fdee3e82996e721"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GREEN</b>&#160;&#160;&#160;&quot;\033[32m&quot;      /* Green */</td></tr>
+<tr class="separator:acfbc006ea433ad708fdee3e82996e721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b3b25cba33b07c303f3060fe41887f6" id="r_a7b3b25cba33b07c303f3060fe41887f6"><td class="memItemLeft" align="right" valign="top"><a id="a7b3b25cba33b07c303f3060fe41887f6" name="a7b3b25cba33b07c303f3060fe41887f6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BLACK</b>&#160;&#160;&#160;&quot;\033[30m&quot;      /* Black */</td></tr>
+<tr class="separator:a7b3b25cba33b07c303f3060fe41887f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a42b7eec408b8e629976052132ded4764" id="r_a42b7eec408b8e629976052132ded4764"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42b7eec408b8e629976052132ded4764">Checker</a> ()</td></tr>
+<tr class="memdesc:a42b7eec408b8e629976052132ded4764"><td class="mdescLeft">&#160;</td><td class="mdescRight">UNIT test for this program.  <br /></td></tr>
+<tr class="separator:a42b7eec408b8e629976052132ded4764"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>&lt; keep coefficients of equation </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a32c8f559554a84ad203a86d3080b1d58" name="a32c8f559554a84ad203a86d3080b1d58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32c8f559554a84ad203a86d3080b1d58">&#9670;&#160;</a></span>a</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a42b7eec408b8e629976052132ded4764" name="a42b7eec408b8e629976052132ded4764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42b7eec408b8e629976052132ded4764">&#9670;&#160;</a></span>Checker()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Parameters::a</td>
+          <td class="memname">void Checker </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>the senior coefficient of equation (x^2) </p>
+
+<p>UNIT test for this program. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>&lt; array of coefficients, right solves and their count for each equation</p>
 
 </div>
 </div>
-<a id="a59558baa54c65dded137c2ab79e55ffe" name="a59558baa54c65dded137c2ab79e55ffe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59558baa54c65dded137c2ab79e55ffe">&#9670;&#160;</a></span>b</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Parameters::b</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>the second coefficient of equation (x) </p>
-
-</div>
-</div>
-<a id="a67d43460299de121dc5e8f50d36e7f24" name="a67d43460299de121dc5e8f50d36e7f24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67d43460299de121dc5e8f50d36e7f24">&#9670;&#160;</a></span>c</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Parameters::c</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>the free term of equation (x^2) </p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/<a class="el" href="_structures_8h_source.html">Structures.h</a></li>
-</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
